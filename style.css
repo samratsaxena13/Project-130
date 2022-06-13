@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    background: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#heading {
+    border-radius: 20px;
+    background-color: black;
+    padding: 10px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+#instruction {
+    border-radius: 10px;
+    background-color: black;
+    padding: 5px;
+    width: fit-content;
+}
+
+#song-name {
+    border-radius: 10px;
+    background-color: black;
+    padding: 5px;
+    width: fit-content;
+    font-size: 30px;
+}
+
+canvas {
+    background-color: white;
+    border: 5px gray ridge;
+    animation-name: borderGlow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    transition: 0.2s;
+}
+
+@keyframes borderGlow {
+    0% {box-shadow: 10px 10px 10px white;}
+    25% {box-shadow: 10px -10px 10px white;}
+    50% {box-shadow: -10px -10px 10px white;}
+    75% {box-shadow: -10px 10px 10px white;}
+    100% {box-shadow: 10px 10px 10px white;}
+}
+
+.redBorder {
+    -webkit-text-stroke: 1px red;
+}
+.orangeBorder {
+    -webkit-text-stroke: 1px orange;
+}
+.yellowBorder {
+    -webkit-text-stroke: 1px yellow;
+}
+.limeBorder {
+    -webkit-text-stroke: 1px lime;
+}
+.cyanBorder {
+    -webkit-text-stroke: 1px cyan;
+}
+.indigoBorder {
+    -webkit-text-stroke: 1px blue;
+}
+.violetBorder {
+    -webkit-text-stroke: 1px purple;
+}
+.pinkBorder {
+    -webkit-text-stroke: 1px hotpink;
+}
